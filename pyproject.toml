@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "my-first-python-project"
+version = "0.1.0"
+description = "Junos config backup"
+authors = ["Valentin Burlacu <valentin.burlacu@ymail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "my_first_python_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+junos-eznc = "^2.6.7"
+jxmlease = "^1.0.3"
+python-dotenv = "^1.0.0"
+invoke = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
